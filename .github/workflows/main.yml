@@ -16,4 +16,4 @@ jobs:
                   npm install
             - name: Deploy Sanity
               run: |
-                  SANITY_AUTH_TOKEN="${{ secrets.SANITY_AUTH_TOKEN }}" sanity deploy
+                  SANITY_AUTH_TOKEN="${{ secrets.SANITY_AUTH_TOKEN }}" npm run deploy
