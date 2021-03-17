@@ -21,14 +21,24 @@ export default {
             name: "title",
             title: "Title",
             type: "string",
-            validation: (Rule) => Rule.required().min(10, 'Too short').max(140, 'Too long'),
+            validation: (Rule) => [Rule.required(),
+            Rule.min(10).warning('Too short'),
+            Rule.max(140).warning('Too long'),
+            Rule.regex(
+                /^.*[^\s]$/,
+                {
+                    name: "title", // Error message is "Does not match email-pattern"
+                    invert: false, // Boolean to allow any value that does NOT match pattern
+                }
+            ),
+            ],
         },
         {
             name: "description",
             title: "Short Description",
             description: "This shows in the blogs page",
             type: "string",
-            validation: (Rule) => Rule.required().min(10, 'Too short').max(140, 'Too long'),
+            validation: (Rule) => [Rule.required(), Rule.min(10).warning('Too short'), Rule.max(140).warning('Too long')],
         },
         {
             name: 'readingTime',
@@ -44,34 +54,14 @@ export default {
             validation: (Rule) => Rule.required().min(1, 'Need one or more').max(5, 'Too many'),
         },
         {
-            title: 'Inital Pusblish Date',
-            name: 'initialPublishDate',
-            type: 'date',
-            options: {
-                dateFormat: 'YYYY-MM-DD',
-                calendarTodayLabel: 'Today'
-            },
-            validation: (Rule) => Rule.required(),
-        },
-        {
-            title: 'Edited date',
-            name: 'editedDate',
-            type: 'date',
-            options: {
-                dateFormat: 'YYYY-MM-DD',
-                calendarTodayLabel: 'Today'
-            },
-            validation: (Rule) => Rule.required(),
-        },
-        {
             name: 'body',
             title: 'Blog',
             type: 'richText',
             validation: (Rule) => Rule.required(),
         },
         {
-            name: 'interestingArticles',
-            title: 'Interesting Articles',
+            name: 'relatedArticles',
+            title: 'Related Articles',
             type: 'array',
             of: [{ type: 'string' }],
         },
