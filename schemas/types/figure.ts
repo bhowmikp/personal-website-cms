@@ -10,12 +10,25 @@ export default {
         {
             name: 'alt',
             type: 'string',
-            title: 'Alternative text'
+            title: 'Alternative text',
+            validation: (Rule) => Rule.required()
         },
         {
             name: 'caption',
             type: 'string',
             title: 'Caption'
+        },
+        {
+            name: 'width',
+            title: 'Width',
+            type: 'number',
+            validation: (Rule) => Rule.required()
+        },
+        {
+            name: 'height',
+            title: 'Height',
+            type: 'number',
+            validation: (Rule) => Rule.required()
         },
         {
             name: 'alignment',
