@@ -63,13 +63,13 @@ export default {
             name: 'relatedArticles',
             title: 'Related Articles',
             type: 'array',
-            of: [{ type: 'string' }],
+            of: [{ type: 'urlLinkText' }],
         },
         {
             name: 'references',
             title: 'References',
             type: 'array',
-            of: [{ type: 'string' }],
+            of: [{ type: 'urlLinkText' }],
         },
     ]
 }
