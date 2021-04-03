@@ -10,6 +10,9 @@ export default {
         },
         {
             type: 'code'
+        },
+        {
+            type: 'horizontalRow'
         }
     ]
 }
