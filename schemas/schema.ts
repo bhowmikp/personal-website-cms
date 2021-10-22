@@ -7,6 +7,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 // We import object and document schemas
 import homepage from './homepage';
 import blog from './blog';
+import siteSettings from './siteSettings';
 
 import richtext from './types/richtext';
 import figure from './types/figure';
@@ -24,6 +25,7 @@ export default createSchema({
     // in the studio.
     homepage,
     blog,
+    siteSettings,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     richtext,
