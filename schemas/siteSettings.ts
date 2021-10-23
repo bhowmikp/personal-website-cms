@@ -8,8 +8,7 @@ export default {
             name: 'title',
             title: 'Title',
             type: 'string',
-            hidden: true,
-            readonly: true
+            hidden: true
         },
         {
             name: 'header',
@@ -52,5 +51,8 @@ export default {
                 ]
             }]
         }
-    ]
+    ],
+    initialValue : {
+        title: 'Site Settings'
+    }
   }
