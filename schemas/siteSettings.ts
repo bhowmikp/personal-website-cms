@@ -2,14 +2,13 @@ export default {
     name: 'siteSettings',
     title: 'Site Settings',
     type: 'document',
-    __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'], 
+    // __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'], 
     fields: [
         {
             name: 'title',
             title: 'Title',
             type: 'string',
-            hidden: true,
-            readonly: true
+            hidden: true
         },
         {
             name: 'header',
@@ -52,5 +51,8 @@ export default {
                 ]
             }]
         }
-    ]
+    ],
+    initialValue : {
+        title: 'Site Settings'
+    }
   }
