@@ -11,5 +11,12 @@ export default () =>
             .schemaType('siteSettings')
             .documentId('siteSettings')
         ),
-      ...S.documentTypeListItems().filter(listItem => !['siteSettings'].includes(listItem.getId()))
+      S.listItem()
+        .title('Homepage')
+        .child(
+          S.document()
+            .schemaType('homepage')
+            .documentId('homepage')
+        ),
+      ...S.documentTypeListItems().filter(listItem => !['siteSettings', 'homepage'].includes(listItem.getId()))
     ]);

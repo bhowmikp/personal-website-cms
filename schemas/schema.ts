@@ -31,6 +31,6 @@ export default createSchema({
     richtext,
     figure,
     urlLinkText,
-    horizontalRow
+    horizontalRow,
   ]),
 })

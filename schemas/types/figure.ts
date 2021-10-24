@@ -1,6 +1,10 @@
 export default {
     name: "figure",
     type: 'object',
+    options: {
+        collapsible: true,
+        collapsed: true,
+    },
     fields: [
         {
             name: 'image',
@@ -33,7 +37,15 @@ export default {
         {
             name: 'alignment',
             type: 'string',
-            title: 'Alignment (left, right, standalone)',
+            title: 'Alignment',
+            options: {
+                list: [
+                    { title: 'left', value: 'left' },
+                    { title: 'right', value: 'right' },
+                    { title: 'standalone', value: 'standalone' }
+                ],
+                layout: 'radio'
+            },
             validation: (Rule) =>
                 Rule.regex(
                     /left|right|standalone/,
