@@ -45,7 +45,7 @@ export default {
                         name: 'paragraphTitle', type: 'string', title: 'Paragraph Title', validation: (Rule) => Rule.required()
                     },
                     {
-                        name: 'paragraphDescription', type: 'richText', title: 'Paragraph Description', validation: (Rule) => Rule.required()
+                        name: 'paragraphDescription', type: 'text', title: 'Paragraph Description', validation: (Rule) => Rule.required()
                     },
                     {name: 'image', title: 'Image', type: 'figure'},
                     {
