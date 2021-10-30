@@ -25,8 +25,8 @@ export default {
             type: 'string',
             options: {
                 list: [
-                    {title: 'Regular', value: 'regular'},
-                    {title: 'Full', value: 'full'}
+                    {title: 'Regular', value: 'regular-button'},
+                    {title: 'Link', value: 'link-button'}
                 ]
             },
             validation: (Rule) => Rule.required()
