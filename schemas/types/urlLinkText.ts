@@ -7,18 +7,33 @@ export default {
             name: 'urlText', type: 'string', title: 'URL Text', validation: (Rule) => Rule.required()
         },
         {
-            name: 'url', type: 'url', title: 'URL', validation: (Rule) => Rule.required()
+            name: 'url', type: 'string', title: 'URL', validation: (Rule) => Rule.required()
         },
         {
             name: 'target', type: 'string',
             options: {
                 list: [
-                    { title: 'self', value: '_self' },
-                    { title: 'blank', value: '_blank' }
+                    { title: 'Self', value: '_self' },
+                    { title: 'Blank', value: '_blank' }
                 ],
-                layout: 'radio'
+            },
+            validation: (Rule) => Rule.required()
+        },
+        {
+            name: 'style',
+            title: 'Style',
+            type: 'string',
+            options: {
+                list: [
+                    {title: 'Regular', value: 'regular-button'},
+                    {title: 'Link', value: 'link-button'}
+                ]
             },
             validation: (Rule) => Rule.required()
         }
-    ]
+    ],
+    initialValue: {
+        style: 'regular',
+        target: '_self'
+    }
 }

@@ -1,6 +1,6 @@
 import { useDocumentOperation } from '@sanity/react-hooks';
 
-export function HelloWorldAction(props) {
+export const ComputeAction = (props) => {
     const { patch } = useDocumentOperation(props.id, props.type);
     let allText = "";
     let generatedTableOfContents = [];
