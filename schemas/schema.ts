@@ -6,6 +6,8 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // We import object and document schemas
 import homepage from './homepage';
+import experience from './experience';
+import projects from './projects';
 import blog from './blog';
 import siteSettings from './siteSettings';
 
@@ -24,6 +26,8 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
     homepage,
+    experience,
+    projects,
     blog,
     siteSettings,
     // When added to this list, object types can be used as

@@ -18,5 +18,19 @@ export default () =>
             .schemaType('homepage')
             .documentId('homepage')
         ),
-      ...S.documentTypeListItems().filter(listItem => !['siteSettings', 'homepage'].includes(listItem.getId()))
+      S.listItem()
+        .title('Experience')
+        .child(
+          S.document()
+            .schemaType('experience')
+            .documentId('experience')
+        ),
+      S.listItem()
+        .title('Projects')
+        .child(
+          S.document()
+            .schemaType('projects')
+            .documentId('projects')
+        ),
+      ...S.documentTypeListItems().filter(listItem => !['siteSettings', 'homepage', 'experience', 'projects'].includes(listItem.getId()))
     ]);

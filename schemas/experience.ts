@@ -1,6 +1,6 @@
 export default {
-    name: "homepage",
-    title: "Homepage",
+    name: "experience",
+    title: "Experience",
     type: "document",
     fields: [
         {
@@ -19,14 +19,7 @@ export default {
             },
             fields: [
                 {name: 'header', title: 'Header', type: 'string'},
-                {name: 'description', title: 'Description', type: 'text'},
-                {name: 'profilePic', title: 'Profile Pic', type: 'figure'},
-                {
-                    name: 'cta',
-                    title: 'Cta',
-                    type: 'array',
-                    of: [{type: 'urlLinkText'}]
-                }
+                {name: 'description', title: 'Description', type: 'text'}
             ]
         },
         {
@@ -59,6 +52,6 @@ export default {
         }
     ],
     initialValue : {
-        title: 'Homepage'
+        title: 'Experience'
     }
 }
