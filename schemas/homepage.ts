@@ -21,12 +21,7 @@ export default {
                 {name: 'header', title: 'Header', type: 'string'},
                 {name: 'description', title: 'Description', type: 'text'},
                 {name: 'profilePic', title: 'Profile Pic', type: 'figure'},
-                {
-                    name: 'cta',
-                    title: 'Cta',
-                    type: 'array',
-                    of: [{type: 'urlLinkText'}]
-                }
+                {name: 'resumeButtonText', title: 'Resume Button Text', type: 'string'}
             ]
         },
         {
