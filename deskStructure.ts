@@ -26,11 +26,25 @@ export default () =>
             .documentId('experience')
         ),
       S.listItem()
+        .title('Archive')
+        .child(
+          S.document()
+            .schemaType('archive')
+            .documentId('archive')
+        ),
+      S.listItem()
         .title('Projects')
         .child(
           S.document()
             .schemaType('projects')
             .documentId('projects')
         ),
-      ...S.documentTypeListItems().filter(listItem => !['siteSettings', 'homepage', 'experience', 'projects'].includes(listItem.getId()))
+      ...S.documentTypeListItems().filter(
+        listItem => ![
+          'siteSettings',
+          'homepage',
+          'experience',
+          'projects',
+          'archive'
+        ].includes(listItem.getId()))
     ]);
