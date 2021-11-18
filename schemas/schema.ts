@@ -11,6 +11,7 @@ import projects from './projects';
 import archive from './archive';
 import blog from './blog';
 import siteSettings from './siteSettings';
+import recognition from './recognition';
 
 import richtext from './types/richtext';
 import figure from './types/figure';
@@ -33,6 +34,7 @@ export default createSchema({
     archive,
     blog,
     siteSettings,
+    recognition,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     richtext,

@@ -39,12 +39,20 @@ export default () =>
             .schemaType('projects')
             .documentId('projects')
         ),
+      S.listItem()
+        .title('Recognitions')
+        .child(
+          S.document()
+            .schemaType('recognition')
+            .documentId('recognition')
+        ),
       ...S.documentTypeListItems().filter(
         listItem => ![
           'siteSettings',
           'homepage',
           'experience',
           'projects',
-          'archive'
+          'archive',
+          'recognition'
         ].includes(listItem.getId()))
     ]);
