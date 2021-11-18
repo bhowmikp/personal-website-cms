@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 import homepage from './homepage';
 import experience from './experience';
 import projects from './projects';
+import archive from './archive';
 import blog from './blog';
 import siteSettings from './siteSettings';
 
@@ -15,6 +16,7 @@ import richtext from './types/richtext';
 import figure from './types/figure';
 import urlLinkText from './types/urlLinkText';
 import horizontalRow from './types/customHr';
+import pageHeading from './types/pageHeading';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -28,6 +30,7 @@ export default createSchema({
     homepage,
     experience,
     projects,
+    archive,
     blog,
     siteSettings,
     // When added to this list, object types can be used as
@@ -36,5 +39,6 @@ export default createSchema({
     figure,
     urlLinkText,
     horizontalRow,
+    pageHeading
   ]),
 })
