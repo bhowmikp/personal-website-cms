@@ -20,6 +20,11 @@ export default {
             type: 'string'
         },
         {
+            title: 'Profile Picture',
+            name: 'profilePic',
+            type: 'figure'
+        },
+        {
             title: 'Paragraph Desctiption',
             name: 'paragraphDescription',
             type: 'richText'
