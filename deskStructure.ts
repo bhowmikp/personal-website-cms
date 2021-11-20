@@ -46,6 +46,13 @@ export default () =>
             .schemaType('recognition')
             .documentId('recognition')
         ),
+      S.listItem()
+        .title('About Me')
+        .child(
+          S.document()
+            .schemaType('aboutMe')
+            .documentId('aboutMe')
+        ),
       ...S.documentTypeListItems().filter(
         listItem => ![
           'siteSettings',
@@ -53,6 +60,7 @@ export default () =>
           'experience',
           'projects',
           'archive',
-          'recognition'
+          'recognition',
+          'aboutMe'
         ].includes(listItem.getId()))
     ]);
