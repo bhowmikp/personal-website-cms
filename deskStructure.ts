@@ -53,6 +53,13 @@ export default () =>
             .schemaType('aboutMe')
             .documentId('aboutMe')
         ),
+      S.listItem()
+        .title('Blog Page')
+        .child(
+          S.document()
+            .schemaType('blogPage')
+            .documentId('blogPage')
+        ),
       ...S.documentTypeListItems().filter(
         listItem => ![
           'siteSettings',
@@ -61,6 +68,7 @@ export default () =>
           'projects',
           'archive',
           'recognition',
-          'aboutMe'
+          'aboutMe',
+          'blogPage'
         ].includes(listItem.getId()))
     ]);
