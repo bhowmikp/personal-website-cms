@@ -51,6 +51,11 @@ export default {
                     }
                 ]
             }]
+        },
+        {
+            title: 'Cta Blogs',
+            name: 'ctaBlogs',
+            type: 'ctaBlogs'
         }
     ],
     initialValue : {
