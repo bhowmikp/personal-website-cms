@@ -18,6 +18,11 @@ export default {
             validation: (Rule) => Rule.required(),
         },
         {
+            title: 'Blog Image',
+            name: 'blogImage',
+            type: 'figure'
+        },
+        {
             name: "title",
             title: "Title",
             type: "string",
