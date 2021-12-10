@@ -28,8 +28,7 @@ export default {
                     {title: 'Regular', value: 'regular-button'},
                     {title: 'Link', value: 'link-button'}
                 ]
-            },
-            validation: (Rule) => Rule.required()
+            }
         }
     ],
     initialValue: {
