@@ -28,6 +28,11 @@ export default {
             title: 'Paragraph Desctiption',
             name: 'paragraphDescription',
             type: 'richText'
+        },
+        {
+            title: 'Cta Blogs',
+            name: 'ctaBlogs',
+            type: 'ctaBlogs'
         }
     ],
     initialValue : {

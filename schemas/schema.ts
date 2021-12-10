@@ -20,6 +20,7 @@ import figure from './types/figure';
 import urlLinkText from './types/urlLinkText';
 import horizontalRow from './types/customHr';
 import pageHeading from './types/pageHeading';
+import ctaBlogs from './types/ctaBlogs';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -45,6 +46,7 @@ export default createSchema({
     figure,
     urlLinkText,
     horizontalRow,
-    pageHeading
+    pageHeading,
+    ctaBlogs
   ]),
 })

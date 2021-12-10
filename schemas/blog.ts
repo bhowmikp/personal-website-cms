@@ -10,7 +10,7 @@ export default {
             options: {
                 list: [
                     { title: 'Programming', value: 'programming' },
-                    { title: 'Investing', value: 'investing' },
+                    { title: 'Finance', value: 'finance' },
                     { title: 'Miscellaneous', value: 'miscellaneous' }
                 ],
                 layout: 'radio'
@@ -106,5 +106,10 @@ export default {
             type: 'array',
             of: [{ type: 'urlLinkText' }],
         },
+        {
+            title: 'Cta Blogs',
+            name: 'ctaBlogs',
+            type: 'ctaBlogs'
+        }
     ]
 }
