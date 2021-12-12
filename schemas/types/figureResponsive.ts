@@ -1,5 +1,5 @@
 export default {
-    name: "figure",
+    name: "figureResponsive",
     type: 'object',
     options: {
         collapsible: true,

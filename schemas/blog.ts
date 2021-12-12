@@ -20,7 +20,7 @@ export default {
         {
             title: 'Blog Image',
             name: 'blogImage',
-            type: 'figure'
+            type: 'figureFill'
         },
         {
             name: "title",

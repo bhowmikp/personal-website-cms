@@ -20,7 +20,7 @@ export default {
             fields: [
                 {name: 'header', title: 'Header', type: 'string'},
                 {name: 'description', title: 'Description', type: 'text'},
-                {name: 'profilePic', title: 'Profile Pic', type: 'figure'},
+                {name: 'profilePic', title: 'Profile Pic', type: 'figureFill'},
                 {name: 'resumeButtonText', title: 'Resume Button Text', type: 'string'}
             ]
         },
@@ -42,7 +42,7 @@ export default {
                     {
                         name: 'paragraphDescription', type: 'richText', title: 'Paragraph Description', validation: (Rule) => Rule.required()
                     },
-                    {name: 'image', title: 'Image', type: 'figure'},
+                    {name: 'image', title: 'Image', type: 'figureFill'},
                     {
                         name: 'cta',
                         title: 'Cta',

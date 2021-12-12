@@ -22,7 +22,7 @@ export default {
         {
             title: 'Profile Picture',
             name: 'profilePic',
-            type: 'figure'
+            type: 'figureResponsive'
         },
         {
             title: 'Paragraph Desctiption',
