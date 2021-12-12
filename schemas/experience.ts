@@ -32,7 +32,7 @@ export default {
                     {
                         name: 'paragraphDescription', type: 'richText', title: 'Paragraph Description', validation: (Rule) => Rule.required()
                     },
-                    {name: 'image', title: 'Image', type: 'figure'},
+                    {name: 'image', title: 'Image', type: 'figureFill'},
                     {
                         name: 'cta',
                         title: 'Cta',

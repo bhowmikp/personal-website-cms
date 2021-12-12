@@ -16,7 +16,8 @@ import aboutMe from './aboutMe';
 import blogPage from './blogPage';
 
 import richtext from './types/richtext';
-import figure from './types/figure';
+import figureResponsive from './types/figureResponsive';
+import figureFill from './types/figureFill';
 import urlLinkText from './types/urlLinkText';
 import horizontalRow from './types/customHr';
 import pageHeading from './types/pageHeading';
@@ -43,7 +44,8 @@ export default createSchema({
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     richtext,
-    figure,
+    figureResponsive,
+    figureFill,
     urlLinkText,
     horizontalRow,
     pageHeading,

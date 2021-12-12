@@ -6,7 +6,7 @@ export default {
             type: 'block'
         },
         {
-            type: 'figure'
+            type: 'figureFill'
         },
         {
             type: 'code'
