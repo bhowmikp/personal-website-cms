@@ -6,13 +6,19 @@ export default {
             type: 'block'
         },
         {
-            type: 'figureFill'
+            type: 'figureFill',
+            title: 'Figure'
         },
         {
             type: 'code'
         },
         {
-            type: 'horizontalRow'
+            type: 'horizontalRow',
+            title: 'Horizontal Row'
+        },
+        {
+            type: 'adBanner',
+            title: 'Ad Banner'
         }
     ]
 }

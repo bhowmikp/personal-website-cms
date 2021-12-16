@@ -4,10 +4,10 @@ export default {
     type: 'object',
     fields: [
         {
-            name: 'urlText', type: 'string', title: 'URL Text', validation: (Rule) => Rule.required()
+            name: 'urlText', type: 'string', title: 'URL Text'
         },
         {
-            name: 'url', type: 'string', title: 'URL', validation: (Rule) => Rule.required()
+            name: 'url', type: 'string', title: 'URL'
         },
         {
             name: 'target', type: 'string',
@@ -17,7 +17,6 @@ export default {
                     { title: 'Blank', value: '_blank' }
                 ],
             },
-            validation: (Rule) => Rule.required()
         },
         {
             name: 'style',
