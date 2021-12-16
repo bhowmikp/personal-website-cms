@@ -10,7 +10,8 @@
     "start": "cross-env SANITY_STUDIO_API_DATASET=development sanity start",
     "build": "cross-env SANITY_STUDIO_API_DATASET=development sanity build",
     "deploy": "cross-env SANITY_STUDIO_API_DATASET=production sanity deploy",
-    "upgrade": "sanity upgrade"
+    "upgrade": "sanity upgrade",
+    "login": "sanity login"
   },
   "keywords": [
     "sanity"
